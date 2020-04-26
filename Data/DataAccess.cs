@@ -19,7 +19,7 @@ namespace petsolutionlogin.Data
         }
         public DataAccess()
         {
-            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Rafi Samnan\source\repos\petsolutionlogin\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30"; ;
+            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30"; ;
         }
 
         private SqlCommand GetCommand(string sqlQuery)
@@ -167,8 +167,9 @@ namespace petsolutionlogin.Data
         }
         public DataTable Execute(SqlCommand command)
         {
-            DataTable dt = new DataTable();
+            
             command.Connection.Open();
+            DataTable dt = new DataTable();
             dt.Load(command.ExecuteReader());
             command.Connection.Close();
             return dt;

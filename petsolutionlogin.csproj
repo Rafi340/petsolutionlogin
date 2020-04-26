@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\DataAccess.cs" />
+    <Compile Include="Dpinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dpinfo.Designer.cs">
+      <DependentUpon>Dpinfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\BEntity.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\UserInfo.cs" />
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dpinfo.resx">
+      <DependentUpon>Dpinfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

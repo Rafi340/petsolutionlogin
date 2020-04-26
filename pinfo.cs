@@ -39,7 +39,7 @@ namespace petsolutionlogin
                 txtAge.Text = userInfo.PetAge;
                 txtAddress.Text = userInfo.PresentAddress;
                 txtBlood.Text = userInfo.BloodGroup;
-                dob.Value = userInfo.DOB;
+                
                 txtProblem.Text = userInfo.PetProblem;
                 txtSolution.Text = userInfo.PetSolution;
                 txtMedicine.Text = userInfo.MedicineName;
@@ -57,7 +57,8 @@ namespace petsolutionlogin
             DateTime dt = this.dob.Value.Date;
             UserInfo userInfo = new UserInfo()
             {
-                FirstName=txtFirstName.Text,
+                
+                FirstName =txtFirstName.Text,
                 LastName=txtLastName.Text,
                 BloodGroup = txtBlood.Text,
                 PetName=txtPetName.Text,
@@ -67,7 +68,7 @@ namespace petsolutionlogin
                 PetProblem =txtProblem.Text,
                 PetSolution=txtSolution.Text,
                 MedicineName=txtMedicine.Text,
-                DOB = dt,
+               // DOB = dt,
              
                 
             };
@@ -81,6 +82,11 @@ namespace petsolutionlogin
             {
                 MessageBox.Show("Unable to save.");
             }
+        }
+
+        private void pinfo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

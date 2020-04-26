@@ -22,8 +22,8 @@ namespace petsolutionlogin
 
         private void login_Click(object sender, EventArgs e)
         {
-            string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Rafi Samnan\source\repos\petsolutionlogin\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
-            string sql= "select Id,Password,UserName,EmailAddress,UpdatedDate" +
+            string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
+            string sql= "select Id,Password,UserName,EmailAddress,UserType" +
                 " from [dbo].[Users] where UserName='" + UserName.Text
                 + "' and Password='" + Password.Text + "'";
             SqlConnection con = new SqlConnection(ConnectionString);
@@ -31,31 +31,53 @@ namespace petsolutionlogin
 
             DataTable dt = new DataTable();
             sqlcmd.Connection.Open();
+           // Users user1;
             dt.Load(sqlcmd.ExecuteReader());
             if(dt.Rows.Count > 0)
             {
-                MessageBox.Show("Correct ");
+
                 Entities.Users user = new Users()
                 {
                     Id = dt.Rows[0].Field<int>("Id"),
                     UserName = dt.Rows[0].Field<string>("UserName"),
-                    //UserType=dt.Rows[0].Field<string>("UserType"),
-                    Password= dt.Rows[0][1].ToString(),
-                    EmailAddress=dt.Rows[0][3].ToString(),
-                    UserType= dt.Rows[0][2].ToString(),
-                    DOB = DateTime.Parse(dt.Rows[0][4].ToString())
+                    UserType=dt.Rows[0].Field<string>("UserType"),
+                    Password = dt.Rows[0][1].ToString(),
+                    EmailAddress = dt.Rows[0][3].ToString(),
+                    // UserType= dt.Rows[0][2].ToString(),
+
+                     
+
                 };
-             
-                    pinfo pinfo= new pinfo(user);
+                if (user.UserType == "P")
+                {
+                    pinfo pinfo = new pinfo(user);
                     pinfo.Show();
                     this.Hide();
-                
+                }
+                else if (user.UserType == "D")
+                {
+                    Dpinfo dpinfo = new Dpinfo(user);
+                    dpinfo.Show();
+                    this.Hide();
+
+                }
+                else
+                {
+                    MessageBox.Show("not Correct ");
+                }
+
+
+
+                MessageBox.Show("Correct ");
+
             }
+
             else
             {
                 DataAccess dataAccess = new DataAccess(ConnectionString);
                 List<Entities.Users> users = dataAccess.GetList<Entities.Users>();
             }
+            
             sqlcmd.Connection.Close();
 
            

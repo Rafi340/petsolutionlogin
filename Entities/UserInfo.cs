@@ -18,6 +18,6 @@ namespace petsolutionlogin.Entities
         public string PetSolution { get; set; }
         public string MedicineName { get; set; }
         public string BloodGroup { get; set; }
-        public DateTime DOB { get; set; }
+       
     }
 }
