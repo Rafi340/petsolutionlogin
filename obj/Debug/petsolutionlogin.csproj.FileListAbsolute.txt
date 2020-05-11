@@ -21,3 +21,15 @@ C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.cs
 C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.exe
 C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.pdb
 C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.Dpinfo.resources
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\bin\Debug\petsolutionlogin.exe.config
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\bin\Debug\petsolutionlogin.exe
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\bin\Debug\petsolutionlogin.pdb
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.csprojAssemblyReference.cache
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.Dpinfo.resources
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.Form1.resources
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.pinfo.resources
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.Properties.Resources.resources
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.csproj.GenerateResource.cache
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.csproj.CoreCompileInputs.cache
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.exe
+C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.pdb
