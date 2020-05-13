@@ -41,8 +41,8 @@ namespace petsolutionlogin
                 txtBlood.Text = userInfo.BloodGroup;
                 
                 txtProblem.Text = userInfo.PetProblem;
-                txtSolution.Text = userInfo.PetSolution;
-                txtMedicine.Text = userInfo.MedicineName;
+               // txtSolution.Text = userInfo.PetSolution;
+               // txtMedicine.Text = userInfo.MedicineName;
             }
         }
         public pinfo(Users _user)
@@ -54,7 +54,7 @@ namespace petsolutionlogin
 
         private void Save_Click(object sender, EventArgs e)
         {
-            DateTime dt = this.dob.Value.Date;
+           // DateTime dt = this.dob.Value.Date;
             UserInfo userInfo = new UserInfo()
             {
                 
@@ -66,8 +66,8 @@ namespace petsolutionlogin
                 PetAge=txtAge.Text,
                 PresentAddress=txtAddress.Text,
                 PetProblem =txtProblem.Text,
-                PetSolution=txtSolution.Text,
-                MedicineName=txtMedicine.Text,
+                //PetSolution=txtSolution.Text,
+               // MedicineName=txtMedicine.Text,
                // DOB = dt,
              
                 
@@ -87,6 +87,31 @@ namespace petsolutionlogin
         private void pinfo_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
+            string sql1 = String.Format("select PetSolution from  [dbo].[UserInfo]");
+
+            SqlConnection conn = new SqlConnection(ConnectionString);
+            SqlCommand sqlCmd1 = new SqlCommand(sql1, conn);
+
+            DataTable dt = new DataTable();
+
+            sqlCmd1.Connection.Open();
+           
+            dt.Load(sqlCmd1.ExecuteReader());
+            dataGridView1.DataSource = dt;
+            sqlCmd1.Connection.Close();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
         }
     }
 }

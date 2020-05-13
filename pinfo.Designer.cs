@@ -38,8 +38,6 @@
             this.s = new System.Windows.Forms.Label();
             this.agggg = new System.Windows.Forms.Label();
             this.b = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.m = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtPetName = new System.Windows.Forms.TextBox();
@@ -48,22 +46,24 @@
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtBlood = new System.Windows.Forms.TextBox();
             this.txtProblem = new System.Windows.Forms.TextBox();
-            this.txtSolution = new System.Windows.Forms.TextBox();
-            this.txtMedicine = new System.Windows.Forms.TextBox();
-            this.dob = new System.Windows.Forms.DateTimePicker();
             this.Save = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(21, 23);
+            this.label1.Location = new System.Drawing.Point(17, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(97, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome   ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -71,112 +71,101 @@
             // ffff
             // 
             this.ffff.AutoSize = true;
-            this.ffff.Location = new System.Drawing.Point(73, 71);
+            this.ffff.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ffff.Location = new System.Drawing.Point(35, 71);
             this.ffff.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ffff.Name = "ffff";
-            this.ffff.Size = new System.Drawing.Size(60, 13);
+            this.ffff.Size = new System.Drawing.Size(87, 16);
             this.ffff.TabIndex = 1;
             this.ffff.Text = "First Name:";
             // 
             // lllll
             // 
             this.lllll.AutoSize = true;
-            this.lllll.Location = new System.Drawing.Point(73, 101);
+            this.lllll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lllll.Location = new System.Drawing.Point(35, 101);
             this.lllll.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lllll.Name = "lllll";
-            this.lllll.Size = new System.Drawing.Size(58, 13);
+            this.lllll.Size = new System.Drawing.Size(82, 16);
             this.lllll.TabIndex = 2;
             this.lllll.Text = "LastName:";
             // 
             // ppppp
             // 
             this.ppppp.AutoSize = true;
-            this.ppppp.Location = new System.Drawing.Point(70, 131);
+            this.ppppp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ppppp.Location = new System.Drawing.Point(32, 131);
             this.ppppp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ppppp.Name = "ppppp";
-            this.ppppp.Size = new System.Drawing.Size(60, 13);
+            this.ppppp.Size = new System.Drawing.Size(87, 16);
             this.ppppp.TabIndex = 3;
             this.ppppp.Text = "Pet\'s Type:";
             // 
             // gggggg
             // 
             this.gggggg.AutoSize = true;
-            this.gggggg.Location = new System.Drawing.Point(70, 160);
+            this.gggggg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gggggg.Location = new System.Drawing.Point(32, 160);
             this.gggggg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gggggg.Name = "gggggg";
-            this.gggggg.Size = new System.Drawing.Size(58, 13);
+            this.gggggg.Size = new System.Drawing.Size(82, 16);
             this.gggggg.TabIndex = 4;
             this.gggggg.Text = "PetGender";
             // 
             // aa
             // 
             this.aa.AutoSize = true;
-            this.aa.Location = new System.Drawing.Point(70, 214);
+            this.aa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aa.Location = new System.Drawing.Point(32, 214);
             this.aa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.aa.Name = "aa";
-            this.aa.Size = new System.Drawing.Size(84, 13);
+            this.aa.Size = new System.Drawing.Size(123, 16);
             this.aa.TabIndex = 5;
             this.aa.Text = "PresentAddress:";
             // 
             // ppp
             // 
             this.ppp.AutoSize = true;
-            this.ppp.Location = new System.Drawing.Point(418, 57);
+            this.ppp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ppp.Location = new System.Drawing.Point(392, 54);
             this.ppp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ppp.Name = "ppp";
-            this.ppp.Size = new System.Drawing.Size(64, 13);
+            this.ppp.Size = new System.Drawing.Size(93, 16);
             this.ppp.TabIndex = 6;
             this.ppp.Text = "PetProblem:";
             // 
             // s
             // 
             this.s.AutoSize = true;
-            this.s.Location = new System.Drawing.Point(416, 198);
+            this.s.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s.Location = new System.Drawing.Point(373, 188);
             this.s.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.s.Name = "s";
-            this.s.Size = new System.Drawing.Size(64, 13);
+            this.s.Size = new System.Drawing.Size(118, 16);
             this.s.TabIndex = 7;
-            this.s.Text = "PetSolution:";
+            this.s.Text = "Doctor Solution:";
             // 
             // agggg
             // 
             this.agggg.AutoSize = true;
-            this.agggg.Location = new System.Drawing.Point(70, 184);
+            this.agggg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agggg.Location = new System.Drawing.Point(32, 184);
             this.agggg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.agggg.Name = "agggg";
-            this.agggg.Size = new System.Drawing.Size(48, 13);
+            this.agggg.Size = new System.Drawing.Size(67, 16);
             this.agggg.TabIndex = 9;
             this.agggg.Text = "Pet Age:";
             // 
             // b
             // 
             this.b.AutoSize = true;
-            this.b.Location = new System.Drawing.Point(70, 266);
+            this.b.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b.Location = new System.Drawing.Point(32, 266);
             this.b.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.b.Name = "b";
-            this.b.Size = new System.Drawing.Size(69, 13);
+            this.b.Size = new System.Drawing.Size(99, 16);
             this.b.TabIndex = 10;
             this.b.Text = "Blood Group:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(70, 308);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(30, 13);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "Date";
-            // 
-            // m
-            // 
-            this.m.AutoSize = true;
-            this.m.Location = new System.Drawing.Point(416, 312);
-            this.m.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.m.Name = "m";
-            this.m.Size = new System.Drawing.Size(84, 13);
-            this.m.TabIndex = 12;
-            this.m.Text = "Medicine Name:";
             // 
             // txtFirstName
             // 
@@ -244,35 +233,10 @@
             this.txtProblem.Size = new System.Drawing.Size(293, 95);
             this.txtProblem.TabIndex = 21;
             // 
-            // txtSolution
-            // 
-            this.txtSolution.Location = new System.Drawing.Point(496, 198);
-            this.txtSolution.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSolution.Multiline = true;
-            this.txtSolution.Name = "txtSolution";
-            this.txtSolution.Size = new System.Drawing.Size(293, 85);
-            this.txtSolution.TabIndex = 22;
-            // 
-            // txtMedicine
-            // 
-            this.txtMedicine.Location = new System.Drawing.Point(502, 312);
-            this.txtMedicine.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMedicine.Multiline = true;
-            this.txtMedicine.Name = "txtMedicine";
-            this.txtMedicine.Size = new System.Drawing.Size(286, 95);
-            this.txtMedicine.TabIndex = 23;
-            // 
-            // dob
-            // 
-            this.dob.Location = new System.Drawing.Point(158, 308);
-            this.dob.Margin = new System.Windows.Forms.Padding(2);
-            this.dob.Name = "dob";
-            this.dob.Size = new System.Drawing.Size(151, 20);
-            this.dob.TabIndex = 24;
-            // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(84, 377);
+            this.Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save.Location = new System.Drawing.Point(76, 327);
             this.Save.Margin = new System.Windows.Forms.Padding(2);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(117, 39);
@@ -284,10 +248,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 44);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(32, 44);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 13);
+            this.label2.Size = new System.Drawing.Size(25, 16);
             this.label2.TabIndex = 26;
             this.label2.Text = "Id:";
             // 
@@ -296,20 +261,51 @@
             this.textBox1.Location = new System.Drawing.Point(158, 44);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(126, 20);
             this.textBox1.TabIndex = 27;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(496, 173);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(293, 141);
+            this.dataGridView1.TabIndex = 28;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(582, 327);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 39);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "LOAD SOLUTION";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(756, 6);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Log out";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pinfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 448);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Save);
-            this.Controls.Add(this.dob);
-            this.Controls.Add(this.txtMedicine);
-            this.Controls.Add(this.txtSolution);
             this.Controls.Add(this.txtProblem);
             this.Controls.Add(this.txtBlood);
             this.Controls.Add(this.txtAddress);
@@ -318,8 +314,6 @@
             this.Controls.Add(this.txtPetName);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.txtFirstName);
-            this.Controls.Add(this.m);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.b);
             this.Controls.Add(this.agggg);
             this.Controls.Add(this.s);
@@ -334,6 +328,7 @@
             this.Name = "pinfo";
             this.Text = "pinfo";
             this.Load += new System.EventHandler(this.Pifo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,8 +346,6 @@
         private System.Windows.Forms.Label s;
         private System.Windows.Forms.Label agggg;
         private System.Windows.Forms.Label b;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label m;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtPetName;
@@ -361,11 +354,11 @@
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtBlood;
         private System.Windows.Forms.TextBox txtProblem;
-        private System.Windows.Forms.TextBox txtSolution;
-        private System.Windows.Forms.TextBox txtMedicine;
-        private System.Windows.Forms.DateTimePicker dob;
         private System.Windows.Forms.Button Save;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

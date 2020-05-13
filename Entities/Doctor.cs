@@ -12,14 +12,13 @@ namespace petsolutionlogin.Entities
        
         public string Name { get; set; }
         public string Age { get; set; }
-        public string Specialist { get; set; }
+        //public string Specialist { get; set; }
         public string Gender { get; set; }
         public string DoctorAddress { get; set; }
         public string DBloodGroup { get; set; }
         public string DateOfBirth { get; set; }
         public string AboutDoctor { get; set; }
-        public string DetailsDoctor { get; set; }
-        public string Noofpatient { get; set; }
+      
 
     }
 }

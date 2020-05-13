@@ -48,8 +48,6 @@ namespace petsolutionlogin
                 txtDateOfBirth.Text = doc.DateOfBirth;
                 txtAboutDoctor.Text =doc.AboutDoctor;
 
-                txtDetailsDoctor.Text = doc.DetailsDoctor;
-                txtNoofpatient.Text = doc.Noofpatient;
 
 
             }
@@ -71,12 +69,11 @@ namespace petsolutionlogin
                 Age = txtAge.Text,
                 Specialist = txtSpecialist.Text,
                 Gender = txtGender.Text,
-                DetailsDoctor=txtDetailsDoctor.Text,
                 AboutDoctor=txtAboutDoctor.Text,
                 DoctorAddress = txtDoctorAddress.Text,
                 DBloodGroup = txtBloodGroup.Text,
                 DateOfBirth = txtDateOfBirth.Text,
-                Noofpatient = txtNoofpatient.Text,
+              
             };
 
             DataAccess dataAccess = new DataAccess();
@@ -95,6 +92,21 @@ namespace petsolutionlogin
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void NXTbtn_Click(object sender, EventArgs e)
+        {
+            PatientSolution pt = new PatientSolution(user);
+            pt.Show();
+            this.Hide();
+
+        }
+
+        private void bckBtn_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
         }
     }
 }
