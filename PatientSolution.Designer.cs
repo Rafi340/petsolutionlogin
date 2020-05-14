@@ -46,6 +46,9 @@
             this.ppp = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.bckBtn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.suolutiontxt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,6 +131,7 @@
             this.txtFirstName.Location = new System.Drawing.Point(142, 67);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.ReadOnly = true;
             this.txtFirstName.Size = new System.Drawing.Size(126, 20);
             this.txtFirstName.TabIndex = 35;
             // 
@@ -144,6 +148,7 @@
             this.txtPetName.Location = new System.Drawing.Point(143, 100);
             this.txtPetName.Margin = new System.Windows.Forms.Padding(2);
             this.txtPetName.Name = "txtPetName";
+            this.txtPetName.ReadOnly = true;
             this.txtPetName.Size = new System.Drawing.Size(126, 20);
             this.txtPetName.TabIndex = 37;
             // 
@@ -152,6 +157,7 @@
             this.txtAge.Location = new System.Drawing.Point(143, 173);
             this.txtAge.Margin = new System.Windows.Forms.Padding(2);
             this.txtAge.Name = "txtAge";
+            this.txtAge.ReadOnly = true;
             this.txtAge.Size = new System.Drawing.Size(126, 20);
             this.txtAge.TabIndex = 39;
             // 
@@ -160,6 +166,7 @@
             this.txtBlood.Location = new System.Drawing.Point(143, 219);
             this.txtBlood.Margin = new System.Windows.Forms.Padding(2);
             this.txtBlood.Name = "txtBlood";
+            this.txtBlood.ReadOnly = true;
             this.txtBlood.Size = new System.Drawing.Size(125, 20);
             this.txtBlood.TabIndex = 41;
             // 
@@ -179,6 +186,7 @@
             this.txtGender.Location = new System.Drawing.Point(143, 135);
             this.txtGender.Margin = new System.Windows.Forms.Padding(2);
             this.txtGender.Name = "txtGender";
+            this.txtGender.ReadOnly = true;
             this.txtGender.Size = new System.Drawing.Size(126, 20);
             this.txtGender.TabIndex = 38;
             // 
@@ -188,6 +196,7 @@
             this.txtProblem.Margin = new System.Windows.Forms.Padding(2);
             this.txtProblem.Multiline = true;
             this.txtProblem.Name = "txtProblem";
+            this.txtProblem.ReadOnly = true;
             this.txtProblem.Size = new System.Drawing.Size(293, 95);
             this.txtProblem.TabIndex = 45;
             // 
@@ -225,11 +234,44 @@
             this.bckBtn.UseVisualStyleBackColor = true;
             this.bckBtn.Click += new System.EventHandler(this.bckBtn_Click);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(581, 200);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 26);
+            this.button2.TabIndex = 48;
+            this.button2.Text = "UPLOAD";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // suolutiontxt
+            // 
+            this.suolutiontxt.Location = new System.Drawing.Point(469, 84);
+            this.suolutiontxt.Margin = new System.Windows.Forms.Padding(2);
+            this.suolutiontxt.Multiline = true;
+            this.suolutiontxt.Name = "suolutiontxt";
+            this.suolutiontxt.Size = new System.Drawing.Size(293, 95);
+            this.suolutiontxt.TabIndex = 49;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(395, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 16);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "Solution:";
+            // 
             // PatientSolution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.suolutiontxt);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.bckBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtProblem);
@@ -277,5 +319,8 @@
         private System.Windows.Forms.Label ppp;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button bckBtn;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox suolutiontxt;
+        private System.Windows.Forms.Label label1;
     }
 }

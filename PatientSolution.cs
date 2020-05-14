@@ -56,26 +56,10 @@ namespace petsolutionlogin
         private void button1_Click(object sender, EventArgs e)
         {
             string ConnectionString1 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
-            /*string sql2 = String.Format("select FirstName,PetName,PetGender,PetAge,BloodGroup,PetProblem from  [dbo].[UserInfo] where ID ='" + textBox1.Text+ "'");
-            SqlConnection conn = new SqlConnection(ConnectionString1);
-            SqlCommand sqlCmd2 = new SqlCommand(sql2, conn);
-            DataTable dt1 = new DataTable();
-            sqlCmd2.Connection.Open();
-             textBox1.Text = dt1.Rows[0][0].ToString();
-             txtFirstName.Text = dt1.Rows[0][1].ToString();
-             txtPetName.Text = dt1.Rows[0][3].ToString();
-             txtGender.Text = dt1.Rows[0][4].ToString();
-             txtAge.Text = dt1.Rows[0][5].ToString();
-             txtBlood.Text = dt1.Rows[0][7].ToString();
-             txtProblem.Text = dt1.Rows[0][8].ToString();
-
-           
-            sqlCmd2.Connection.Close();*/
-
             SqlDataAdapter asdf = new SqlDataAdapter("select FirstName, PetName, PetGender, PetAge, BloodGroup, PetProblem from[dbo].[UserInfo] where ID = '" + textBox1.Text+ "'", ConnectionString1);
             DataTable ss = new DataTable();
             asdf.Fill(ss);
-            textBox1.Text = ss.Rows[0][0].ToString();
+            
             txtFirstName.Text = ss.Rows[0][0].ToString();
             txtPetName.Text = ss.Rows[0][1].ToString();
             txtGender.Text = ss.Rows[0][2].ToString();
@@ -92,6 +76,18 @@ namespace petsolutionlogin
             Dpinfo d1 = new Dpinfo(user);
             d1.Show();
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string ConnectionString1 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
+            string sql2 = String.Format("insert into [dbo].[UserInfo] (PetSolution)  values ('{0}') where ID='" + textBox1.Text + "'", suolutiontxt.Text.ToString() );
+            SqlConnection conn = new SqlConnection(ConnectionString1); 
+            SqlCommand sqlCmd2 = new SqlCommand(sql2, conn);
+            DataTable dt1 = new DataTable();
+            sqlCmd2.Connection.Open();
+            
+            sqlCmd2.Connection.Close();
         }
     }
 }
