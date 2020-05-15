@@ -33,7 +33,7 @@ namespace petsolutionlogin
         private void ldPatient_Click(object sender, EventArgs e)
         {
             string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
-            string sql1 = String.Format("select FirstName,PetName,PetGender,PetAge,BloodGroup,PetProblem from  [dbo].[UserInfo] where PetName ='" + user.Specialist+"'");
+            string sql1 = String.Format("select ID,FirstName,PetName,PetGender,PetAge,BloodGroup,PetProblem from  [dbo].[UserInfo] where PetName ='" + user.Specialist+"'");
 
             SqlConnection conn = new SqlConnection(ConnectionString);
             SqlCommand sqlCmd1 = new SqlCommand(sql1, conn);
@@ -81,12 +81,24 @@ namespace petsolutionlogin
         private void button2_Click(object sender, EventArgs e)
         {
             string ConnectionString1 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
-            string sql2 = String.Format("insert into [dbo].[UserInfo] (PetSolution)  values ('{0}') where ID='" + textBox1.Text + "'", suolutiontxt.Text.ToString() );
+            string sql2 = String.Format("insert into [dbo].[PetSolution] (Id,PetSolution)  values ('" + textBox1.Text + "','" + suolutiontxt.Text+ "')");
             SqlConnection conn = new SqlConnection(ConnectionString1); 
             SqlCommand sqlCmd2 = new SqlCommand(sql2, conn);
             DataTable dt1 = new DataTable();
             sqlCmd2.Connection.Open();
-            
+            int rows = sqlCmd2.ExecuteNonQuery();
+
+            if (rows > 0)
+            {
+                MessageBox.Show("SAVED");
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("Something Wrong");
+            }
             sqlCmd2.Connection.Close();
         }
     }
