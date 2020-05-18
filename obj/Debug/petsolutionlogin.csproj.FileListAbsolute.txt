@@ -37,3 +37,12 @@ C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.Pa
 E:\githubfiles\petsolutionlogin\bin\Debug\petsolutionlogin.exe.config
 E:\githubfiles\petsolutionlogin\obj\Debug\petsolutionlogin.exe
 E:\githubfiles\petsolutionlogin\obj\Debug\petsolutionlogin.pdb
+E:\githubfiles\petsolutionlogin\bin\Debug\petsolutionlogin.exe
+E:\githubfiles\petsolutionlogin\bin\Debug\petsolutionlogin.pdb
+E:\githubfiles\petsolutionlogin\obj\Debug\petsolutionlogin.csprojResolveAssemblyReference.cache
+E:\githubfiles\petsolutionlogin\obj\Debug\petsolutionlogin.Dpinfo.resources
+E:\githubfiles\petsolutionlogin\obj\Debug\petsolutionlogin.Form1.resources
+E:\githubfiles\petsolutionlogin\obj\Debug\petsolutionlogin.PatientSolution.resources
+E:\githubfiles\petsolutionlogin\obj\Debug\petsolutionlogin.pinfo.resources
+E:\githubfiles\petsolutionlogin\obj\Debug\petsolutionlogin.Properties.Resources.resources
+E:\githubfiles\petsolutionlogin\obj\Debug\petsolutionlogin.csproj.GenerateResource.Cache

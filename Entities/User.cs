@@ -13,5 +13,6 @@ namespace petsolutionlogin.Entities
         public string UserType { get; set; }
         //public string UserType { get; internal set; }
         public string EmailAddress { get; set; }
+        public string Specialist { get; internal set; }
     }
 }

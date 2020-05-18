@@ -10,6 +10,6 @@ namespace petsolutionlogin.Entities
     {
         public int Id { get; set; }
         
-        public string Specialist { get; set; }
+        //public string Specialist { get; set; }
     }
 }
