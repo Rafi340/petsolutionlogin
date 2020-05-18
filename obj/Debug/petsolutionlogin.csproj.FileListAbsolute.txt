@@ -34,3 +34,6 @@ C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.cspr
 C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.exe
 C:\Users\Aoyon\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.pdb
 C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\obj\Debug\petsolutionlogin.PatientSolution.resources
+E:\githubfiles\petsolutionlogin\bin\Debug\petsolutionlogin.exe.config
+E:\githubfiles\petsolutionlogin\obj\Debug\petsolutionlogin.exe
+E:\githubfiles\petsolutionlogin\obj\Debug\petsolutionlogin.pdb
