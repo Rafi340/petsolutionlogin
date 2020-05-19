@@ -22,7 +22,7 @@ namespace petsolutionlogin
 
         private void login_Click(object sender, EventArgs e)
         {
-            string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\githubfiles\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
+            string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
             string sql= "select Id,Password,UserName,EmailAddress,UserType" +
                 " from [dbo].[Users] where UserName='" + UserName.Text
                 + "' and Password='" + Password.Text + "'";

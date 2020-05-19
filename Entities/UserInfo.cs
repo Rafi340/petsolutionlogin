@@ -15,7 +15,7 @@ namespace petsolutionlogin.Entities
         public string PetAge { get; set; }
         public string PresentAddress { get; set;}
         public string PetProblem { get; set; }
-        public string PetSolution { get; set; }
+       // public string PetSolution { get; set; }
         public string BloodGroup { get; set; }
        
     }

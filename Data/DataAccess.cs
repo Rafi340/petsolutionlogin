@@ -19,7 +19,7 @@ namespace petsolutionlogin.Data
         }
         public DataAccess()
         {
-            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\githubfiles\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30"; ;
+            ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30"; ;
         }
 
         private SqlCommand GetCommand(string sqlQuery)
