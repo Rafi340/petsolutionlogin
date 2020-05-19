@@ -81,7 +81,7 @@ namespace petsolutionlogin
         private void button2_Click(object sender, EventArgs e)
         {
             string ConnectionString1 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\githubfiles\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
-            string sql2 = String.Format("insert into [dbo].[PetSolution] (Id,solution)  values ('" + textBox1.Text + "','" + suolutiontxt.Text+ "')");
+            string sql2 = String.Format("insert into [dbo].[ps] (Id,solution)  values ('" + textBox1.Text + "','" + suolutiontxt.Text+ "')");
             SqlConnection conn = new SqlConnection(ConnectionString1); 
             SqlCommand sqlCmd2 = new SqlCommand(sql2, conn);
             DataTable dt1 = new DataTable();
