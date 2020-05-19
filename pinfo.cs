@@ -86,8 +86,8 @@ namespace petsolutionlogin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
-            string sql1 = String.Format("select PetSolution from  [dbo].[UserInfo]");
+            string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DOLPHIN\Documents\GitHub\petsolutionlogin\Properties\PetData.mdf;Integrated Security=True;Connect Timeout=30";
+            string sql1 = String.Format("select solution from  [dbo].[PetSolution]");
 
             SqlConnection conn = new SqlConnection(ConnectionString);
             SqlCommand sqlCmd1 = new SqlCommand(sql1, conn);
@@ -98,7 +98,7 @@ namespace petsolutionlogin
            
             dt.Load(sqlCmd1.ExecuteReader());
             dataGridView1.DataSource = dt;
-            sqlCmd1.Connection.Close();*/
+            sqlCmd1.Connection.Close();
 
         }
 
